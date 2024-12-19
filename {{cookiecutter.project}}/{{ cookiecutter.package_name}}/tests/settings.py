@@ -17,7 +17,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'kitchenai_cookbook',
+    '{{ cookiecutter.package_name }}',
 ]
 
 MIDDLEWARE = [
@@ -30,7 +30,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'kitchenai_cookbook.urls'
+ROOT_URLCONF = '{{ cookiecutter.package_name }}.urls'
 
 TEMPLATES = [
     {

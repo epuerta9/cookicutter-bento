@@ -63,18 +63,25 @@ lock-filename = "requirements.txt"
 
 [tool.hatch.envs.dev]
 dependencies = [
-
+  "django-browser-reload",
+  "django-debug-toolbar",
+  "dj-notebook>=0.6.1",
+  "Werkzeug[watchdog]>=3.0.1",
   "django-stubs[compatible-mypy]",
+  "django-fastdev",
   "coverage[toml]>=6.5",
   "pre-commit",
   "pytest",
   "pytest-django",
   "pytest-sugar",
   "pytest-xdist",
+  "falco-cli",
+  "django-watchfiles",
   "git-cliff",
   "bump-my-version",
   "hatch-pip-compile",
-]
+  "jupyterlab",
+  ]
 lock-filename = "requirements-dev.txt"
 
 
@@ -126,9 +133,8 @@ ignore_missing_model_attributes = true
 bento = "{{ cookiecutter.package_name }}"
 
 [tool.pytest.ini_options]
-DJANGO_SETTINGS_MODULE = "{{ cookiecutter.package_name }}.tests.settings"
+DJANGO_SETTINGS_MODULE = "kitchenai.settings"
 pythonpath = "."
-python_files = ["tests.py", "test_*.py", "*_tests.py"]
 asyncio_mode = "auto"
 
 [tool.ruff.lint]
