@@ -1,10 +1,6 @@
 from django.urls import path
 from django.conf import settings
 import djp
-from llama_index.llms.openai import OpenAI
-
-
-llm = OpenAI(model="gpt-4")
 
 @djp.hookimpl
 def installed_apps():
