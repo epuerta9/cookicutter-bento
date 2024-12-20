@@ -5,8 +5,8 @@ logger = logging.getLogger(__name__)
 
 
 
-@kitchen.storage("file")
-def chromadb_storage(dir: str, metadata: dict = {}, *args, **kwargs):
+@kitchen.storage("{{cookiecutter.project}}")
+def file_storage(dir: str, metadata: dict = {}, *args, **kwargs):
     """
     Example: 
         @kitchen.storage("file")

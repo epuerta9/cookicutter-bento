@@ -5,7 +5,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-@kitchen.query("query")
+@kitchen.query("{{cookiecutter.project}}")
 async def query(data: QuerySchema):
     """
     Example: 
