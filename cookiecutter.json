@@ -1,9 +1,9 @@
 {
-  "project_suffix": "",
+  "project_name": "",
   "project_description": "",
-  "project_type": ["bento", "app", "plugin"],
-  "project": "kitchenai-{{ cookiecutter.project_type }}-{{ cookiecutter.project_suffix.lower()|replace(' ', '-')|replace('.', '-')|trim() }}",
-  "package_name": "{{ cookiecutter.project_suffix.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}_{{ cookiecutter.project_type }}",
+  "project_type": ["bento", "app"],
+  "project": "kitchenai-{{ cookiecutter.project_type }}-{{ cookiecutter.project_name.lower()|replace(' ', '-')|replace('.', '-')|trim() }}",
+  "package_name": "kitchenai_{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}_{{ cookiecutter.project_type }}",
   "author_name": "",
   "author_email": ""
 }

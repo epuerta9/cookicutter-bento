@@ -19,7 +19,7 @@ def settings(current_settings):
     current_settings["KITCHENAI"]["{{ cookiecutter.project_type }}"].append({
         "name": "{{ cookiecutter.package_name }}",
         "description": "{{ cookiecutter.project_description }}",
-        "tags": ["{{ cookiecutter.project_suffix }}", "{{ cookiecutter.project_type }}", "{{cookiecutter.package_name}}", "{{cookiecutter.project}}"],
+        "tags": ["{{ cookiecutter.project_name }}", "{{ cookiecutter.project_type }}", "{{cookiecutter.package_name}}", "{{cookiecutter.project}}"],
     })
     
 
